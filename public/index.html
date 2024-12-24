@@ -8,17 +8,22 @@
 </head>
 <body>
   <nav>
-    <a href="./index.html">Gerador Gatinhos</a>
-    <a href="./curiosidades.html">Curiosidades</a>
-    <a href=" ./sobre.html">Sobre o Projeto</a>
-  </nav>
+    <button id="menuButton" class="hamburger">
+        ☰
+    </button>
+    <div id="navLinks" class="nav-links">
+        <a href="./index.html">Gerador Gatinhos</a>
+        <a href="./curiosidades.html">Curiosidades</a>
+        <a href="./sobre.html">Sobre o Projeto</a>
+    </div>
+</nav>
   <section id="gerador-gatinhos">
     <h1>Gerador de Imagens de Gatinhos 🐱</h1>
     <button id="generateCat">Clique aqui!</button>
     <div id="catContainer">
       <img id="catImage" src="" alt="Imagem de um gatinho" hidden>
     </div>
-    <script src="./js/gerador.js"></script>
+    
   </section>
   <footer>
     <p>Desenvolvido por Mariana Oliveira</p>
@@ -29,7 +34,8 @@
       <img src="../assets/linkedin.png" alt="imagem linkedin">
     </a>
   </footer>
-  
+  <script src="./js/gerador.js"></script>
+  <script src="./js/hamburgermenu.js"></script>
 </body>
 </html>
 
