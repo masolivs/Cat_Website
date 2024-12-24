@@ -11,4 +11,4 @@ document.getElementById('generateCat').addEventListener('click', async () => {
       alert('Não foi possível gerar o gatinho. Tente novamente mais tarde.');
     }
   });
-  
+ 
