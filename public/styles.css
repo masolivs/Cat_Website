@@ -1,34 +1,58 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  img {
-    margin-top: 20px;
-    max-width: 300px;
-    border-radius: 8px;
-  }
+* {
+  margin: 0;
+  padding: 0;
+}
 
-  .card {
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
-    min-height: 50px;
+html, body {
+  height: 100%;  
+}
+
+body {
+  display: flex;
+  flex-direction: column;  
+  font-family: "Jost", serif;
+  text-align: center;
+}
+
+button {
+  padding: 8px 60px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: "Jost", serif;
+  background-color: #B652E1;
+  text-decoration: none;
+  border: none;
+  color: white;
+  margin-top: 40px;
+}
+
+img {
+  margin-top: 20px;
+  max-width: 400px;
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+section .gerador-gatinhos {
+  align-content: center;
+}
+
+h1 {
+  margin-top: 90px;
+  font-size: 40px;
+  text-shadow: medium;
+  font-weight: normal;
 }
 
 nav {
+  font-family: "Josefin Slab", serif;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #D283EE;
   color: white;
 }
 
@@ -43,7 +67,7 @@ nav {
 }
 
 .hamburger {
-  display: none; 
+  display: none;
   font-size: 24px;
   background: none;
   border: none;
@@ -51,24 +75,54 @@ nav {
   cursor: pointer;
 }
 
-/*para telas menores */
+footer {
+  font-family: "Josefin Slab", serif;
+  background-color: #D283EE;
+  color: white;
+  width: 100%;
+  margin-top: auto; 
+  position: relative;
+  bottom: 0;
+}
+
+footer img {
+  margin-top: 10px;
+  width: 20px;
+}
+
+footer p {
+  margin-top: 20px;
+}
+
+/* para telas menores */
 @media (max-width: 768px) {
   .nav-links {
-      display: none; 
-      flex-direction: column;
-      background-color: #333;
-      position: absolute;
-      top: 50px;
-      right: 20px;
-      padding: 10px;
-      border-radius: 8px;
+    display: none;
+    flex-direction: column;
+    background-color: #D283EE;
+    position: absolute;
+    top: 70px;
+    align-items: center;
+    padding: 10px;
+    width: 200px;
   }
 
   .nav-links.show {
-      display: flex; 
+    display: flex;
   }
 
   .hamburger {
-      display: block; 
+    display: block;
+  }
+
+  footer {
+    margin-top: auto;
+    bottom: 0;
+    align-items: center;
+  }
+
+  footer img {
+    margin-top: 10px;
+    width: 25px;
   }
 }

@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cat Website</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav>
@@ -17,7 +21,7 @@
         <a href="./sobre.html">Sobre o Projeto</a>
     </div>
 </nav>
-  <section id="gerador-gatinhos">
+  <section class="gerador-gatinhos">
     <h1>Gerador de Imagens de Gatinhos 🐱</h1>
     <button id="generateCat">Clique aqui!</button>
     <div id="catContainer">
@@ -26,13 +30,16 @@
     
   </section>
   <footer>
-    <p>Desenvolvido por Mariana Oliveira</p>
-    <a href="https://github.com/masolivs" target="_blank">
-      <img src="../assets/github.png" alt="imagem github">
-    </a>
-    <a href="https://www.linkedin.com/in/mariana-oliveira-498981290/" target="_blank">
-      <img src="../assets/linkedin.png" alt="imagem linkedin">
-    </a>
+    <div class="footer">
+      <p>Desenvolvido por Mariana Oliveira</p>
+      <a href="https://github.com/masolivs" target="_blank">
+        <img src="../assets/github.png" alt="imagem github">
+      </a>
+      <a href="https://www.linkedin.com/in/mariana-oliveira-498981290/" target="_blank">
+        <img src="../assets/linkedin.png" alt="imagem linkedin">
+      </a>
+    </div>
+    
   </footer>
   <script src="./js/gerador.js"></script>
   <script src="./js/hamburgermenu.js"></script>
