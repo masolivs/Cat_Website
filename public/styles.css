@@ -92,6 +92,7 @@ footer img {
 
 footer p {
   margin-top: 20px;
+  margin-left: 42%;
 }
 
 .sobre {
@@ -111,6 +112,13 @@ footer p {
   text-align: justify;
   margin-top: -100px;
 }
+
+.titulo_texto p {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+
 
 .sobre img {
   width: 40%;
@@ -179,6 +187,10 @@ hr {
     align-items: center;
   }
 
+  footer p {
+    margin-left: 20%;
+  }
+
   footer img {
     margin-top: 10px;
     width: 25px;
@@ -196,5 +208,11 @@ hr {
     flex-direction: column;
   }
 
+  hr {
+    width: 200px;
+  }
 
+  .curiosidades p {
+    overflow-wrap: normal;
+  }
 }
