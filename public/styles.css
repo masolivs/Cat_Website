@@ -94,7 +94,31 @@ footer p {
   margin-top: 20px;
 }
 
-/* para telas menores */
+.sobre {
+  display: flex;
+  justify-content: center;
+  background-color: #F6F3FD;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 120px;
+}
+
+.titulo_texto {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  text-align: justify;
+  margin-top: -100px;
+
+}
+
+
+.sobre img {
+  width: 40%;
+}
+
+/* responsividade para telas menores */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -124,5 +148,13 @@ footer p {
   footer img {
     margin-top: 10px;
     width: 25px;
+  }
+
+  .sobre {
+    flex-direction: column;
+  }
+
+  .titulo_texto, .sobre img {
+    width: 100%;
   }
 }
