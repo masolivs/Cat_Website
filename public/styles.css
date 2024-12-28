@@ -206,13 +206,28 @@ hr {
 
   .cards {
     flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 auto; 
+    text-align: center;
+  }
+
+  .card {
+    margin-bottom: 10px;
   }
 
   hr {
     width: 200px;
+    margin: 20px auto;
   }
 
+  .curiosidades h1, .curiosidades p {
+      margin: 20px; 
+      text-align: center;
+      word-wrap: break-word; 
+      overflow-wrap: break-word; 
+    }
   .curiosidades p {
-    overflow-wrap: normal;
+    margin-bottom: 20px;
   }
 }
